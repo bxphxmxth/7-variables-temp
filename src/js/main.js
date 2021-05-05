@@ -44,35 +44,35 @@
 
 //     6. ### Créer un programme qui permet d'ajouter des elements dans un tableau via des prompts quand le tableau contient 3 éléments, renvoyez une alerte avec le contenu du tableau
 
-// let tab = [];
+let tab = [];
 
-// let rep1 = prompt("Tu vx quoi afou?");
-// let rep2 = prompt("Encore?");
-// let rep3 = prompt("wesh t'abuses");
+let rep1 = prompt("Tu vx quoi afou?");
+let rep2 = prompt("Encore?");
+let rep3 = prompt("wesh t'abuses");
 
-// tab.push(rep1,rep2,rep3);
+tab.push(rep1,rep2,rep3);
 
-// if(tab.length == 3){
-//     console.log(tab);
-// }
+if(tab.length == 3){
+    console.log(tab);
+}
 
 
 
 
 //     7. ### Créer un programme qui permet a l'utilisateur de mettre des chiffres dans des bacs, si le chiffre est plus grand ou égal à 12 il va dans le bac "grandNombres" si il est plus petit que 12 il va dans le bac "petitNombres" affiche ensuite une seule alerte avec le contenu des deux bacs
 
-let tinyBac = [];
-let bigBac = [];
+// let tinyBac = [];
+// let bigBac = [];
 
-let rep = prompt("cmb??");
+// let rep = prompt("cmb??");
 
-if( rep >= 12){
-    bigBac.push(rep);
-}else{
-    tinyBac.push(rep);
-}
+// if( rep >= 12){
+//     bigBac.push(rep);
+// }else{
+//     tinyBac.push(rep);
+// }
 
-console.log(`${tinyBac} et ${bigBac}`);
+// console.log(`${tinyBac} et ${bigBac}`);
 
 
 
