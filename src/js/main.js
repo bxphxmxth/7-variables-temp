@@ -1,127 +1,88 @@
-// # Variables temporaires REUSSI
-    // let a = 1; -> 2
-    //  let b = 2; -> 3
-    // let c = 3; -> 1
-//     - ## Afficher le changement des variables
+// // // # Les conditions - introduction
+// // //     1. ### Via un console.log() vérifie l'egalité entre 1 et "1"
 
-// let a = 1; 
-// let b = 2; 
-// let c = 3;
+// let prem = 1;
+// let sec = "1";
 
-// console.log(a,b,c);
-
-// temp = a;  // 1
-
-// a = b; // 2 
-// b = c; // 3
-// c = temp; // 1
+// console.log(prem == sec);
 
 
-// console.log(a,b,c);
+// // //     2. ### Via un console.log() vérifie l'egalité STRICTE entre 1 et "1"
+
+// console.log(prem === sec);
+
+// // //     3. ### Créer un programme qui demande le prénom d'une personne, si le prénom de la personne comporte moins de 5 caractères, affichée une alerte avec comme message " Ton nom est trop court "
+
+// let prenom = prompt("Ton nom wesh");
+
+// if(prenom.length < 5){
+//     console.log("Trop couurt");
+// }
+
+// // //     4. ### Affiche une addition a l'utilisateur et demande lui de résoudre l'addition, si il répond juste, félicitez le, sinon dite lui que c'est incorrect.
+
+// let rep = prompt("2+2");
+
+// if(rep == 4){
+//     console.log("Uii bravo");
+// }else{
+//     console.log("nn t nul sorry");
+// }
 
 
-// - # Exo 1 CORRIGE
-//     - ## Afficher 4, 3, 2, 1
-//     - ## let a = 1; -> 4
-//     - ## let b = 2; -> 3
-//     - ## let c = 3; -> 2
-//     - ## let d = 4; -> 1
+//     5. ### Affiche une multiplication à l'utilisateur et demande lui de la résoudre, si il répond juste félicitez le "la réponse était bien xx" sinon dite lui, à combien d'unité il était de la réponse exemple si la réponse etait 35 et qu'il répont 40 renvoyez lui une alerte avec "C'est dommage, tu n'étais qu'a 5 unité de la bonne réponse"
 
-//  let a = 1; 
-//  let b = 2; 
-//  let c = 3; 
-//  let d = 4; 
-//  let temps;
+// let rep = prompt("5*5=??????");
+// let unites = Math.abs(rep - 25);
 
-//  console.log(a,b,c,d,);
-
-//  temp = a; // temp vaut 1
-//  a = d; // a vaut d (4)  
-//  d = temp; // d vaut temp (1)
-//  temp = b; // temp vaut b (2)
-//  b = c; // b vaut c (3) 
-//  c = temp; // c vaut temp (2) 
- 
-
- 
-
-//  console.log(a,b,c,d);
+// if(rep == 25){
+//     console.log("noicee");
+// }else{
+//     console.log(`Tu es à ${unites} unités de la bonne réponse :o`);
+// }
 
 
+//     6. ### Créer un programme qui permet d'ajouter des elements dans un tableau via des prompts quand le tableau contient 3 éléments, renvoyez une alerte avec le contenu du tableau
 
-//     - ## Afficher le changement des variables
+// let tab = [];
 
+// let rep1 = prompt("Tu vx quoi afou?");
+// let rep2 = prompt("Encore?");
+// let rep3 = prompt("wesh t'abuses");
 
+// tab.push(rep1,rep2,rep3);
 
-// - #  Exo 2 REUSSI
-//     - ## let a = 1; -> 2
-//     - ## let b = 2; -> 3
-//     - ## let c = 3; -> 4
-//     - ## let d = 4; -> 1
-
-
-// let a = 1; 
-// let b = 2; 
-// let c = 3; 
-// let d = 4; 
-
-// console.log(a,b,c,d,);
-
-// temp = a; // 1
-
-// a = b; // 2
-// b = c; //3
-// c = d; // 4
-// d = temp; //1
-
-// //     - ## Afficher le changement des variables
-
-
-// console.log(a,b,c,d,);
-
-
-// - # Exo 3 
-//     - ## Afficher 4, 3, 2, 1 avec une variable temporaire
-
-let tableau = [1, 2, 3, 4, "temp"];
-
-console.log(tableau);
-
-
-// Voir correction en screen 
-
-tab[4] = tab[0]; // indice 4 vaut 1
-tab[0] = tab[3];
-tab[3] = tab[4];
-tab[4] = tab[1];
-tab[1] = tab[2];
-tab[2] = tab[4];
-
-console.log(tab[0], tab[1], tab[2], tab[3]);
+// if(tab.length == 3){
+//     console.log(tab);
+// }
 
 
 
-// - # Exo 4  REUSSI
 
+//     7. ### Créer un programme qui permet a l'utilisateur de mettre des chiffres dans des bacs, si le chiffre est plus grand ou égal à 12 il va dans le bac "grandNombres" si il est plus petit que 12 il va dans le bac "petitNombres" affiche ensuite une seule alerte avec le contenu des deux bacs
 
-let a = 1  // -> 4
-let b = 2 // -> 5
-let c = 3 // -> 1
-let d = 4 // -> 2
-let e = 5 // -> 6
-let f = 6 // -> 3
+let tinyBac = [];
+let bigBac = [];
 
-temp = a; //1
+let rep = prompt("cmb??");
 
-a = d; // 4 
-d = b; // 2
-b = e; // 5
-e = f; // 6 
-f = c; // 3
-c = temp; //1
+if( rep >= 12){
+    bigBac.push(rep);
+}else{
+    tinyBac.push(rep);
+}
+
+console.log(`${tinyBac} et ${bigBac}`);
 
 
 
-//     - ## Afficher le changement des variables
 
-console.log(a,b,c,d,e,f);
+
+//     8. ### Invente un exercice avec ce que tu as appris en Javascript jusqu'a maintenant en incluent des conditions
+
+// let age = 20;
+// if (age >= 18){
+//     console.log("tu peux entrer, tu es majeur"); 
+// }else{
+//     console.log("t mineur bouge");
+// }
